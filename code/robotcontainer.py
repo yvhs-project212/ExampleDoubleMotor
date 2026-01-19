@@ -57,6 +57,7 @@ class RobotContainer:
         # R1 button: first motor reverse
         Trigger(lambda: self.PS5.getR1Button()).onTrue(ReverseSpin(self.firstmotorsub))
         Trigger(lambda: self.PS5.getR1Button()).onFalse(StopSpin(self.firstmotorsub))
+        
 
         # Example for other buttons (X) if needed
         # Trigger(lambda: self.PS5.getCrossButton()).onTrue(SomeCommand(...))
